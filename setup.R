@@ -1,3 +1,6 @@
 install.packages("maps")
-library(devtools)
-devtools::install_github("rstudio/sparklyr")
+install.packages("DBI")
+install.packages("sparklyr")
+install.packages("ggplot2")
+install.packages("maps")
+install.packages("geosphere")
