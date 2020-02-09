@@ -1,6 +1,5 @@
-# Flight Analytics
-Flight Analytics with sparklyR
-Created by Michiaki Ariga (aki@cloudera.com)
+# Flight Analytics Tutorial using CDSW
+Flight Analytics with sparklyR. Originally created by Michiaki Ariga (aki@cloudera.com)
 
 ## Status: Demo Ready
 
