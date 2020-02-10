@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Creating a local data directory."
-mkdir flight-analytics/data
+mkdir -p flight-analytics/data
 cd flight-analytics/data
 
 echo "Getting the tables in parquet format."

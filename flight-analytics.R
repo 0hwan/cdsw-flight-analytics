@@ -15,7 +15,7 @@ config$spark.driver.cores   <- 2
 config$spark.executor.cores <- 4
 config$spark.executor.memory <- "4G"
 
-spark_home <- "/opt/cloudera/parcels/SPARK2/lib/spark2"
+spark_home <- Sys.getenv("SPARK_HOME")
 spark_version <- "2.0.0"
 sc <- spark_connect(master="yarn-client", version=spark_version, config=config, spark_home=spark_home)
 
