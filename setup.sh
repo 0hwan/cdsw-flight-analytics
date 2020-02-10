@@ -21,3 +21,10 @@ hadoop fs -chmod 777 /tmp/airlines /tmp/airports
 
 echo "Removing local data directory."
 rm -rf flight-analytics/data
+
+echo "Installing R packages"
+R -e "install.packages('maps', repos='http://cran.rstudio.com/')"
+R -e "install.packages('DBI', repos='http://cran.rstudio.com/')"
+R -e "install.packages('sparklyr', repos='http://cran.rstudio.com/')"
+R -e "install.packages('ggplot2', repos='http://cran.rstudio.com/')"
+R -e "install.packages('geosphere', repos='http://cran.rstudio.com/')"

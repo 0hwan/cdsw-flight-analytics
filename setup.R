@@ -1,6 +1,0 @@
-install.packages("maps")
-install.packages("DBI")
-install.packages("sparklyr")
-install.packages("ggplot2")
-install.packages("maps")
-install.packages("geosphere")
