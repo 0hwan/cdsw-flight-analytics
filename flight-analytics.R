@@ -1,3 +1,25 @@
+## Check installed libraries
+if(!"maps" %in% rownames(installed.packages())) {
+  install.packages("maps")
+}
+
+if(!"DBI" %in% rownames(installed.packages())) {
+  install.packages("DBI")
+}
+
+if(!"sparklyr" %in% rownames(installed.packages())) {
+  install.packages("sparklyr")
+}
+
+if(!"ggplot2" %in% rownames(installed.packages())) {
+  install.packages("ggplot2")
+}
+
+
+if(!"geosphere" %in% rownames(installed.packages())) {
+  install.packages("geosphere")
+}
+
 ## Load libraries
 library(ggplot2)
 library(maps)

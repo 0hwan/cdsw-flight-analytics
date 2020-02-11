@@ -15,3 +15,7 @@ tbl_change_db(sc,"flight")
 dbSendQuery(sc, "DROP TABLE airports_str")
 dbSendQuery(sc, "DROP TABLE airports")
 dbSendQuery(sc, "DROP TABLE airlines_bi_pq")
+
+system("hadoop fs -rm -r -f /tmp/airports")
+system("hadoop fs -rm -r -f /tmp/airlines")
+

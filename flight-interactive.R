@@ -31,7 +31,6 @@ print("Hello world!")
 
 system("ls -l")
 
-
 # ## Markdown
 
 # Comments in a code file in CDSW can include
@@ -63,7 +62,6 @@ system("ls -l")
 # 3. Third Item
 
 # [link](https://www.cloudera.com)
-
 
 # ## Copying Files to HDFS
 

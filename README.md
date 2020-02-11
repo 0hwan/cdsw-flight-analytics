@@ -68,6 +68,21 @@ The session is ready. We are going to open a "Terminal Access". In the terminal 
 ![Launching setup.sh bash script ](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image23.png)
 This script will download all the required files in CSV and Parquet format. After download them, it will upload them to the HDFS in the /tmp folder to be analyzed with the R scripts.
 
+![Running the setup.sh](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image16.png)
+After the script finishes, you can check if the files are in the HDFS folder.
+To do that, you can run the in the terminal
+
+> hadoop fs -ls /tmp
+
+If we see in the result list two folders: airlines and airports, the script has been successful.
+
+![hadoop fs -ls /tmp](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image17.png)
+### Sixth step: Running !
+You can run each script line by line or entirely to test the code and the cluster. 
+
+![hadoop fs -ls /tmp](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image25.png)
+### Seventh step: Have Fun and Learn!
+[CDSW](https://www.cloudera.com/products/data-science-and-engineering/data-science-workbench.html) is a complete platform to do open data science with a datalake in a complete environment of governance and security. Others solutions seems to offer the same but they forget that a data driven organization with multiple personas roles and business units will need to access the source of truth under a complete data life cycle with security.
 ___
 # Troubleshooting
 ## Adding a new type of engine
@@ -85,6 +100,10 @@ In the Engines page, we can see the list of engine profiles. So we will add a ne
 After adding our new type of engine, we will see it in the list.
 
 ![Engines page](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image12.png)
+## Session can't we be launched
+If you see an image like the below, you have reach your resource limits in the CDSW cluster. Try to kill other opened sessions and try again.
+
+![Error launching session](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image18.png)
 
 
 
