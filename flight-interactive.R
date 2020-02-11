@@ -80,15 +80,15 @@ system("ls -l")
 # Delete the `flights` subdirectory and its contents in
 # your home directory, in case it already exists:
 
-system("hdfs dfs -rm -r flights")
+system("hdfs dfs -rm -r /tmp/flights")
 
 # Create the `flights` subdirectory:
 
-system("hdfs dfs -mkdir flights")
+system("hdfs dfs -mkdir /tmp/flights")
 
 # Copy the file into it:
 
-system("hdfs dfs -put flights.csv flights/")
+system("hdfs dfs -put /data/flights.csv /tmp/flights")
 
 # The file `flights.csv` is now stored in the subdirectory
 # `flights` in your home directory in HDFS.
@@ -142,7 +142,7 @@ spark <- spark_connect(
 flights <- spark_read_csv(
   sc = spark,
   name = "flights",
-  path = "flights/",
+  path = "/tmp/flights/flights.csv",
   header = TRUE,
   infer_schema = TRUE
 )
@@ -172,7 +172,6 @@ flights %>% colnames()
 # as fit on the screen (this is the default behavior):
 
 flights
-
 
 # ### Transforming Data Using dplyr Verbs
 
