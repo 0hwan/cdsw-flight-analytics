@@ -110,8 +110,11 @@ First, you need to create it in the local linux system. Pick up a node with HDFS
 After you sucessfully created, you need to add to the HDFS filesystem with the hdfs superuser and add a home directory to the new user. That's all. Below an example script.
 
 > useradd admin
+
 > echo -e "admin\nadmin" | passwd admin
+
 > sudo -u hdfs hadoop fs -mkdir /user/admin
+
 > sudo -u hdfs hadoop fs -chown admin:hadoop /user/admin
 
 # References
