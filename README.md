@@ -105,6 +105,9 @@ If you see an image like the below, you have reach your resource limits in the C
 
 ![Error launching session](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image18.png)
 
-
+# References
+* https://blog.cloudera.com/analyzing-us-flight-data-on-amazon-s3-with-sparklyr-and-apache-spark-2-0/
+* https://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/
+* https://github.com/fabiog1901/cdsw-demo
 
 
