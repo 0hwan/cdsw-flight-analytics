@@ -14,6 +14,7 @@ config <- spark_config()
 config$spark.driver.cores   <- 2
 config$spark.executor.cores <- 4
 config$spark.executor.memory <- "4G"
+config$spark.sql.catalogImplementation <- "hive"
 
 spark_home <- Sys.getenv("SPARK_HOME")
 spark_version <- "2.0.0"
