@@ -105,6 +105,15 @@ If you see an image like the below, you have reach your resource limits in the C
 
 ![Error launching session](https://raw.githubusercontent.com/galanteh/cdsw-flight-analytics/master/images/Image18.png)
 
+## Creating a new user in Hadoop HDFS
+First, you need to create it in the local linux system. Pick up a node with HDFS services on. 
+After you sucessfully created, you need to add to the HDFS filesystem with the hdfs superuser and add a home directory to the new user. That's all. Below an example script.
+
+> useradd admin
+> echo -e "admin\nadmin" | passwd admin
+> sudo -u hdfs hadoop fs -mkdir /user/admin
+> sudo -u hdfs hadoop fs -chown admin:hadoop /user/admin
+
 # References
 * https://blog.cloudera.com/analyzing-us-flight-data-on-amazon-s3-with-sparklyr-and-apache-spark-2-0/
 * https://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/
